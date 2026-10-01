@@ -1,168 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>Module 6 Chart Accessibility</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 6 Chart Accessibility</title>
 </head>
-
 <body>
 
-<h1>Module 6 Chart Accessibility</h1>
+  <h1>Module 6 Chart Accessibility</h1>
+  <p>2 October 2026</p>
 
-<p>2 October 2026</p>
+  <p>This exercise improves the accessibility and readability of my Module 5 emissions chart.</p>
 
-<p>
-This exercise improves the accessibility and readability of my Module 5 emissions chart.
-</p>
+  <h2>Before revision</h2>
 
+  <img src="module5_before.png"
+       alt="Emissions chart before revision, with solid lines and a legend requiring colour matching."
+       style="max-width:100%;height:auto;">
 
-<h2>Data Card</h2>
+  <h3>Accessibility issues</h3>
+  <p>All lines are solid, and the legend requires colour matching. The CO₂ unit also has a missing character.</p>
 
-<table border="1">
+  <h3>Checklist plan</h3>
+  <p>Based on the Data Visualization Checklist, I will improve the title and text sizes, correct the CO₂ label, replace red and green with purple and gray, and add distinct line patterns, endpoint markers and direct labels.</p>
 
-<tr>
-<th>Item</th>
-<th>Description</th>
-</tr>
+  <table>
+    <tr>
+      <th>Criterion</th>
+      <th>Before</th>
+      <th>Change</th>
+    </tr>
+    <tr>
+      <td>Text hierarchy</td>
+      <td>CO₂ glyph is missing.</td>
+      <td>Fix CO₂ and use clear text sizes.</td>
+    </tr>
+    <tr>
+      <td>Grayscale</td>
+      <td>All lines are solid.</td>
+      <td>Add line patterns, markers and labels.</td>
+    </tr>
+  </table>
 
-<tr>
-<td>Dataset</td>
-<td>Per capita greenhouse gas emissions including land use</td>
-</tr>
+  <h2>After revision</h2>
 
-<tr>
-<td>Source</td>
-<td>Jones et al. (2025) and Our World in Data</td>
-</tr>
+  <img src="module6_after.png"
+       alt="Revised emissions chart with distinct line patterns, endpoint markers and direct labels. In 2024, Brazil is at 13.2, China 9.9, World 6.7 and India 2.9 tonnes of CO₂ equivalents per person."
+       style="max-width:100%;height:auto;">
 
-<tr>
-<td>Time period</td>
-<td>1850-2024</td>
-</tr>
+  <p>Data from Jones et al. (2025) and Our World in Data (2025).</p>
 
-<tr>
-<td>Countries/Regions</td>
-<td>Brazil, China, India and World</td>
-</tr>
+  <p>China’s emissions rise sharply after 2000. In 2024, Brazil is at 13.2, China 9.9, World 6.7 and India 2.9 tonnes of CO₂ equivalents per person.</p>
 
-<tr>
-<td>Variable</td>
-<td>Greenhouse gas emissions per person (tonnes of CO₂ equivalents)</td>
-</tr>
+  <h2>Exercise summary</h2>
+  <p>I checked my Module 5 chart for accessibility issues, used the Data Visualization Checklist and recorded planned improvements in Word. In R, I corrected CO₂, improved the title and text sizes, changed the colours, and added line patterns, endpoint markers and direct labels. I saved the revised chart.</p>
 
-<tr>
-<td>Visualisation</td>
-<td>Line chart</td>
-</tr>
+  <h2>AI acknowledgement</h2>
+  <p>I used ChatGPT (OpenAI, 2026) to search for information and websites related to data visualisation. I also used ChatGPT (OpenAI, 2026) to identify vulnerabilities in my R code and revise it accordingly.</p>
 
-<tr>
-<td>Purpose</td>
-<td>Compare changes in emissions per person over time.</td>
-</tr>
+  <h2>References</h2>
 
-</table>
+  <p>Evergreen, S. (n.d.). <em>Rate my visualization.</em> Data Visualization Checklist. Retrieved October 1, 2026, from
+    <a href="https://www.datavisualizationchecklist.com/">https://www.datavisualizationchecklist.com/</a>
+  </p>
 
+  <p>Jones, M. W., Peters, G. P., Gasser, T., Andrew, R. M., Schwingshackl, C., Gütschow, J., Houghton, R. A., Friedlingstein, P., Pongratz, J., &amp; Le Quéré, C. (2025). <em>National contributions to climate change due to historical emissions of carbon dioxide, methane and nitrous oxide</em> (Version 2025.1) [Data set]. Zenodo.
+    <a href="https://doi.org/10.5281/zenodo.16640595">https://doi.org/10.5281/zenodo.16640595</a>
+  </p>
 
-<h2>Before revision</h2>
+  <p>Our World in Data. (n.d.). <em>Per capita greenhouse gas emissions</em> [Interactive data visualization]. Retrieved October 1, 2026, from
+    <a href="https://ourworldindata.org/grapher/per-capita-ghg-emissions">https://ourworldindata.org/grapher/per-capita-ghg-emissions</a>
+  </p>
 
-<img src="module5_before.png"
-alt="Emissions chart before revision"
-width="700">
+  <p>Our World in Data. (2025). <em>Per capita greenhouse gas emissions including land use</em> [Data set]. Retrieved October 1, 2026, from
+    <a href="https://ourworldindata.org/grapher/per-capita-ghg-emissions">https://ourworldindata.org/grapher/per-capita-ghg-emissions</a>
+  </p>
 
-
-<h3>Accessibility issues</h3>
-
-<p>
-All lines are solid, and the legend requires colour matching.
-The CO₂ unit also has a missing character.
-</p>
-
-
-<h3>Checklist plan</h3>
-
-<p>
-Based on the Data Visualization Checklist, I will improve the title and text sizes,
-correct the CO₂ label, replace red and green with purple and gray,
-and add distinct line patterns, endpoint markers and direct labels.
-</p>
-
-
-<h2>After revision</h2>
-
-<img src="module6_after.png"
-alt="Revised emissions chart"
-width="700">
-
-
-<p>
-Data from Jones et al. (2025) and Our World in Data (2025).
-</p>
-
-
-<p>
-China’s emissions rise sharply after 2000.
-In 2024, Brazil is at 13.2, China 9.9,
-World 6.7 and India 2.9 tonnes of CO₂ equivalents per person.
-</p>
-
-
-<h2>Exercise summary</h2>
-
-<p>
-I checked my Module 5 chart for accessibility issues,
-used the Data Visualization Checklist and recorded planned improvements.
-In R, I corrected CO₂, improved the title and text sizes,
-changed the colours, and added line patterns, endpoint markers and direct labels.
-</p>
-
-
-<h2>AI acknowledgement</h2>
-
-<p>
-I used ChatGPT (OpenAI, 2026) to support source searching
-and review my R code for possible errors before making revisions.
-</p>
-
-
-<h2>References</h2>
-
-<p>
-Evergreen, S. (n.d.).
-<i>Rate my visualization.</i>
-Data Visualization Checklist.
-<br>
-https://www.datavisualizationchecklist.com/
-</p>
-
-
-<p>
-Jones, M. W. et al. (2025).
-<i>National contributions to climate change due to historical emissions
-of carbon dioxide, methane and nitrous oxide.</i>
-Zenodo.
-<br>
-https://doi.org/10.5281/zenodo.16640595
-</p>
-
-
-<p>
-Our World in Data.
-<i>Per capita greenhouse gas emissions.</i>
-<br>
-https://ourworldindata.org/grapher/per-capita-ghg-emissions
-</p>
-
-
-<p>
-OpenAI. (2026).
-<i>ChatGPT</i> [Large language model].
-Accessed 2 October 2026.
-<br>
-https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde
-</p>
-
+  <p>OpenAI (2026) <em>ChatGPT</em> [Large language model], accessed 1 October 2026.
+    <a href="https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde">https://chatgpt.com/share/6abed80e-7edc-83ec-b871-98e5e4b42dde</a>
+  </p>
 
 </body>
-
 </html>
